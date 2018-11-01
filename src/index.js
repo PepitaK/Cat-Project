@@ -17,14 +17,17 @@ function printimage() {
 function printimagewtext() {
 
 var first = '<div><img src="https://cataas.com/cat/says/';
-var what = document.getElementById("tekstikentta").value;
-var end = '" alt="Cat"></img></div>';
+var what = document.getElementById("tekstikentta").value ;
+var filter = "?filter=" ;
+var color = "&color=" + document.querySelector('input[name=color]:checked').value + '"';
+var end = ' alt="Cat"></img></div>';
 
 if (document.getElementById("tekstikentta").value.length === 0){
 
 }
 else{
-document.getElementById("picture").innerHTML = first + what + end;
+document.getElementById("picture").innerHTML = first + what + filter + color + end;
+console.log("Hi there! Nice choice! Nurr Nurr!")
 }
 
 }
