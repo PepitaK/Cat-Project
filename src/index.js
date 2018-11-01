@@ -12,7 +12,6 @@ function printimage() {
     }
   }
   ReactDOM.render(<CatPicture/>, document.getElementById("picture"));
-    console.log("moikuva");
 }
 
 function printimagewtext() {
@@ -42,7 +41,6 @@ class NewCat extends React.Component {
 
 function printbutton(props) {
   ReactDOM.render(<NewCat/>, document.getElementById("button"));
-  console.log("moinappi");
 }
 
 
