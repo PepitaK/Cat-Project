@@ -20,13 +20,14 @@ var first = '<div><img src="https://cataas.com/cat/says/ ';
 var what = document.getElementById("tekstikentta").value ;
 var filter = "?filter=" ;
 var color = "&color=" + document.querySelector('input[name=color]:checked').value + '"';
-var end = ' alt="Cat"></img></div>';
+var end = ' alt="Cat"/></div>';
 
-if (document.getElementById("tekstikentta").value.length === 0){
+if (document.getElementById("tekstikentta").value.length === 0 || ! /^[a-zA-Z0-9.!?-_()"]+$/.test(what)){
 
 }
 else{
 document.getElementById("picture").innerHTML = first + what + filter + color + end;
+
 console.log("Hi there! Nice choice! Nurr Nurr!")
 }
 
