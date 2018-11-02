@@ -17,8 +17,8 @@ function printimage() {
 function printimagewtext() {
 
 var first = '<div><img src="https://cataas.com/cat/says/';
-var what = document.getElementById("tekstikentta").value ;
-var color = "?color=" + document.querySelector('input[name=color]:checked').value;
+var what = document.getElementById("tekstikentta").value;
+var color = "?color=" + document.querySelector('input[name=color]:checked').value + '"' ;
 var end = ' alt="Cat"/></div>';
 
 if (document.getElementById("tekstikentta").value.length === 0 || ! /^[a-zA-Z0-9.! ?-_()"]+$/.test(what)){
