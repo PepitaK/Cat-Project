@@ -19,8 +19,8 @@ code {
 img {
   border-radius: 50%;
   border: 3px dotted #c9c9c9;
-  height: 220px;
-  width: 220px;
+  height: 230px;
+  width: 230px;
   object-fit: cover;
   display: block;
   margin-left: auto;
@@ -38,8 +38,6 @@ button {
   font-size: 12px;
   font-family: arial;
   margin-top: 5px;
-  -webkit-transition-duration: 2s; /* Safari */
-transition-duration: 2s;
 }
 
 button:hover{
