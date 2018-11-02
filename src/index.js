@@ -28,7 +28,6 @@ else{
 document.getElementById("picture").innerHTML = first + what  + color + end;
 
 console.log("Hi there! Nice choice! Nurr Nurr!")
-console.log(first + what + color + end)
 }
 
 }
