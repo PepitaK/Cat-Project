@@ -16,19 +16,19 @@ function printimage() {
 
 function printimagewtext() {
 
-var first = '<div><img src="https://cataas.com/cat/says/ ';
+var first = '<div><img src="https://cataas.com/cat/says/';
 var what = document.getElementById("tekstikentta").value ;
-var filter = "?filter=" ;
-var color = "&color=" + document.querySelector('input[name=color]:checked').value + '"';
+var color = "?color=" + document.querySelector('input[name=color]:checked').value;
 var end = ' alt="Cat"/></div>';
 
-if (document.getElementById("tekstikentta").value.length === 0 || ! /^[a-zA-Z0-9.!?-_()"]+$/.test(what)){
+if (document.getElementById("tekstikentta").value.length === 0 || ! /^[a-zA-Z0-9.! ?-_()"]+$/.test(what)){
 
 }
 else{
-document.getElementById("picture").innerHTML = first + what + filter + color + end;
+document.getElementById("picture").innerHTML = first + what  + color + end;
 
 console.log("Hi there! Nice choice! Nurr Nurr!")
+console.log(first + what + color + end)
 }
 
 }
