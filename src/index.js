@@ -21,7 +21,7 @@ var what = document.getElementById("tekstikentta").value;
 var color = "?color=" + document.querySelector('input[name=color]:checked').value + '"' ;
 var end = ' alt="Cat"/></div>';
 
-if (document.getElementById("tekstikentta").value.length === 0 || ! /^[a-zA-Z0-9.! ?-_()"]+$/.test(what)){
+if (document.getElementById("tekstikentta").value.length === 0 || ! /^[a-öA-Ö0-9.! ?-_()"]+$/.test(what)){
 
 }
 else{
